@@ -11,14 +11,11 @@
 		Een module om een feed van artikelen te tonen.
 	</description>
 	<files>
+		<filename>mod_articlesfeed.xml</filename>
 		<filename module="mod_articlesfeed">mod_articlesfeed.php</filename>
 		<folder>tmpl</folder>
 		<filename>helper.php</filename>
 	</files>
-	<languages>
-		<language tag="en-GB">en-GB.mod_articles_latest.ini</language>
-		<language tag="en-GB">en-GB.mod_articles_latest.sys.ini</language>
-	</languages>
 	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LATEST_NEWS" />
 	<config>
 		<fields name="params">
@@ -26,7 +23,7 @@
 				<field name="color" type="color" default="#010050"
 						label="Kleur"
 						description="Kleur" />
-						
+
 				<field
 					name="catid"
 					type="category"
