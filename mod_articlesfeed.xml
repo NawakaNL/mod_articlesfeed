@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>Articles Feed</name>
+	<author>Tristan de Boer</author>
+	<authorEmail>info@tristandeboer.nl</authorEmail>
+	<creationDate>8 maart 2018</creationDate>
+	<copyright>Copyright 2018 Tristan de Boer</copyright>
+	<license>GNU/GPL, see LICENSE.md</license>
+	<version>1.0.0</version>
+	<description>
+		Een module om een feed van artikelen te tonen.
+	</description>
+	<files>
+		<filename module="mod_articlesfeed">mod_articlesfeed.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_articles_latest.ini</language>
+		<language tag="en-GB">en-GB.mod_articles_latest.sys.ini</language>
+	</languages>
+	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_LATEST_NEWS" />
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="color" type="color" default="#010050"
+						label="Kleur"
+						description="Kleur" />
+						
+				<field
+					name="catid"
+					type="category"
+					label="JCATEGORY"
+					description="Categorieen"
+					extension="com_content"
+					multiple="true"
+					size="10"
+					default=""
+					>
+					<option value="">JOPTION_ALL_CATEGORIES</option>
+				</field>
+
+				<field
+					name="count"
+					type="number"
+					label="Aantal artikelen"
+					description="Hoeveel artikelen wil je tonen?"
+					default="5"
+				/>
+
+				<field
+					name="show_featured"
+					type="list"
+					label="Toon speciale artikelen"
+					description="Wil je speciale artikelen tonen?"
+					default=""
+					>
+					<option value="">Tonen</option>
+					<option value="0">Verbergen</option>
+					<option value="1">Toon alleen speciale artikelen</option>
+				</field>
+
+				<field
+					name="ordering"
+					type="list"
+					label="Volgorde"
+					description="In welke volgorde moeten je artikelen staan?"
+					default="published"
+					>
+					<option value="c_dsc">Recent toegevoegd</option>
+					<option value="m_dsc">Recent aangepast</option>
+					<option value="p_dsc">Recent gepubliceerd</option>
+					<option value="mc_dsc">Recent bewerkt</option>
+					<option	value="random">Willekeurige volgorde</option>
+				</field>
+
+				<field
+					name="user_id"
+					type="list"
+					label="Door gebruiker"
+					description="Van welke gebruiker moeten de artikelen afkomstig zijn?"
+					default="0"
+					>
+					<option value="0">Door iedereen</option>
+					<option value="by_me">Door mijzelf</option>
+					<option value="not_me">Niet door mijzelf</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+				/>
+
+				<field
+					name="moduleclass_sfx"
+					type="textarea" rows="3"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"
+				/>
+
+				<field
+					name="cache"
+					type="list"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC"
+					default="1"
+					>
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="number"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC"
+					default="900"
+				/>
+
+				<field
+					name="cachemode"
+					type="hidden"
+					default="static"
+					>
+					<option value="static"></option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
