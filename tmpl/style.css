@@ -75,7 +75,7 @@
   width: 100%;
 }
 
-.custom-row [class^="col"] {
+.custom-row [class^="custom-col"] {
   float: left;
 }
 
