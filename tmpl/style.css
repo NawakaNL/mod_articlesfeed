@@ -5,7 +5,7 @@
   background-position: 50% 50%;
 }
 
-.articlesfeed > div > a :hover {
+.articlesfeed > div > a:hover {
   text-decoration: underline;
 }
 
@@ -49,6 +49,15 @@
 .articlesfeed a.article-link > span:hover{
   color: #010050;
   text-decoration: underline;
+}
+
+.articlesfeed .icon {
+  color: #74a1cd;
+  margin-left: 5px;
+}
+
+.articlesfeed .icons:hover {
+  text-decoration: none;
 }
 
 
