@@ -5,7 +5,7 @@
   background-position: 50% 50%;
 }
 
-.articlesfeed div > a:hover {
+.articlesfeed div a:hover {
   text-decoration: underline;
 }
 
@@ -13,16 +13,16 @@
   margin: 0px;
 }
 
-.articlesfeed div > a > .articlesfeed-title {
+.articlesfeed .articlesfeed-title {
   color: white;
   height: 220px;
 }
 
-.articlesfeed div > a > .articlesfeed-title:hover {
+.articlesfeed .articlesfeed-title:hover {
   text-decoration: underline;
 }
 
-.articlesfeed-title > a > .head-title {
+.articlesfeed-title .head-title {
   font-size: 1.5rem;
   line-height: 1.5rem;
   padding-left: 15px;
@@ -31,7 +31,7 @@
   padding-bottom: 10px;
 }
 
-.articlesfeed div > a > .articlesfeed-title > a > .sub-title {
+.articlesfeed .articlesfeed-title .sub-title {
   padding-left: 15px;
   padding-right: 15px;
 }
