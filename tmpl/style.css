@@ -22,14 +22,13 @@
   text-decoration: underline;
 }
 
-.articlesfeed div > a > .articlesfeed-title > .head-title {
+.articlesfeed-title > .head-title {
   font-size: 1.5rem;
   line-height: 1.5rem;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-
 }
 
 .articlesfeed div > a > .articlesfeed-title > .sub-title {
