@@ -10,11 +10,11 @@
 defined('_JEXEC') or die;
 ?>
 <div class="articlesfeed <?php echo $moduleclass_sfx; ?>">
-	<div class="row">
+	<div class="custom-row">
 		<a href="<?PHP echo $list[0]->link; ?>">
-		<div class="col-7-sm articlesfeed-image" style="background-image: url('<?PHP print(json_decode($list[0]->images)->image_intro); ?>');">
+		<div class="custom-col-7-sm articlesfeed-image" style="background-image: url('<?PHP print(json_decode($list[0]->images)->image_intro); ?>');">
 		</div>
-		<div class="col-5-sm articlesfeed-title" style="background-color: <?PHP echo $color; ?>">
+		<div class="custom-col-5-sm articlesfeed-title" style="background-color: <?PHP echo $color; ?>">
 			<div class="head-title">
 				<?php print($list[0]->title) ?>
 				<div class="icons">
@@ -30,7 +30,7 @@ defined('_JEXEC') or die;
 		</a>
 	</div>
 	<div class="clear"></div>
-	<div class="articleslist">
+	<div class="articleslist custom-row">
 		<ul class="list">
 		<?php foreach (array_slice($list, 1) as $item) : ?>
 			<li itemscope itemtype="https://schema.org/Article" style="color: <?PHP echo $color; ?>">
