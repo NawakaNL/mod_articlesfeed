@@ -9,7 +9,6 @@
 
 defined('_JEXEC') or die;
 ?>
-<?php print_r($list[0]->tags->itemTags[0]->path); ?>
 <div class="articlesfeed <?php echo $moduleclass_sfx; ?>">
 	<div class="row">
 		<a href="<?PHP echo $list[0]->link; ?>">

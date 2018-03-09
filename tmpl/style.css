@@ -1,28 +1,28 @@
-.articlesfeed > div > a > .articlesfeed-image {
+.articlesfeed div > a > .articlesfeed-image {
   height: 220px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
-.articlesfeed > div > a:hover {
+.articlesfeed div > a:hover {
   text-decoration: underline;
 }
 
-.articlesfeed > div > a > div {
+.articlesfeed div > a > div {
   margin: 0px;
 }
 
-.articlesfeed > div > a > .articlesfeed-title {
+.articlesfeed div > a > .articlesfeed-title {
   color: white;
   height: 220px;
 }
 
-.articlesfeed > div > a > .articlesfeed-title:hover {
+.articlesfeed div > a > .articlesfeed-title:hover {
   text-decoration: underline;
 }
 
-.articlesfeed > div > a > .articlesfeed-title > .head-title {
+.articlesfeed div > a > .articlesfeed-title > .head-title {
   font-size: 1.5rem;
   line-height: 1.5rem;
   padding-left: 15px;
@@ -32,12 +32,12 @@
 
 }
 
-.articlesfeed > div > a > .articlesfeed-title > .sub-title {
+.articlesfeed div > a > .articlesfeed-title > .sub-title {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.articlesfeed > .articleslist {
+.articlesfeed .articleslist {
   margin-top: 10px;
   font-size: 0.9rem;
 }
