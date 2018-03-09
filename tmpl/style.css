@@ -18,6 +18,10 @@
   height: 220px;
 }
 
+.articlesfeed .articlesfeed-title, .articlesfeed .articlesfeed-title:hover {
+  color: white;
+}
+
 .articlesfeed .articlesfeed-title:hover {
   text-decoration: underline;
 }
