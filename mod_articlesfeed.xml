@@ -24,6 +24,8 @@
 						label="Kleur"
 						description="Kleur" />
 
+				<field name="title" type="text" default="" label="Titel (optioneel)" description="" />
+
 				<field
 					name="catid"
 					type="category"
