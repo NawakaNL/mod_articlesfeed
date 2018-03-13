@@ -15,10 +15,14 @@ JLoader::register('ModArticlesFeedHelper', __DIR__ . '/helper.php');
 $list            = ModArticlesFeedHelper::getList($params);
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 
+$titleUrl = $params->get('titleurl');
+$title = $params->get('title');
 $color = $params->get('color');
+$lightercolor = $params->get('lightercolor');
 
 // Add CSS
 $document = JFactory::getDocument();
 $document->addStyleSheet(JUri::base().'modules/mod_articlesfeed/tmpl/style.css');
+$document->addScript(JUri::base().'modules/mod_articlesfeed/vendor/lighten.js');
 
 require JModuleHelper::getLayoutPath('mod_articlesfeed', $params->get('layout', 'default'));

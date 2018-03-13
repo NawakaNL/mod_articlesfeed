@@ -23,6 +23,13 @@
 				<field name="color" type="color" default="#010050"
 						label="Kleur"
 						description="Kleur" />
+				<field name="lightercolor" type="color" default="#eaf0fa"
+					label="Kleur 2"
+					description="Kleur 2" />
+
+				<field name="title" type="text" default="" label="Titel (optioneel)" description="" />
+				<field name="titleurl" type="text" default="" label="Titel URL" description="" />
+
 
 				<field
 					name="catid"
