@@ -23,6 +23,5 @@ $lightercolor = $params->get('lightercolor');
 // Add CSS
 $document = JFactory::getDocument();
 $document->addStyleSheet(JUri::base().'modules/mod_articlesfeed/tmpl/style.css');
-$document->addScript(JUri::base().'modules/mod_articlesfeed/vendor/lighten.js');
 
 require JModuleHelper::getLayoutPath('mod_articlesfeed', $params->get('layout', 'default'));
