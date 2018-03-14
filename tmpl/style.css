@@ -29,15 +29,15 @@
 .articlesfeed-title .head-title {
   font-size: 1.5rem;
   line-height: 1.5rem;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .articlesfeed .articlesfeed-title .sub-title {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .articlesfeed .articleslist {
@@ -65,7 +65,7 @@
 
 
 .articlesfeed .titlebar {
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   padding: 5px 10px;
   margin-bottom: 10px;
