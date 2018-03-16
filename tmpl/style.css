@@ -71,6 +71,10 @@
   margin-bottom: 10px;
 }
 
+.articlesfeed > div a:hover {
+  color: white;
+}
+
 .articlesfeed .light {
   color: #010050 !important;
 }
