@@ -19,6 +19,8 @@ $titleUrl = $params->get('titleurl');
 $title = $params->get('title');
 $color = $params->get('color');
 $lightercolor = $params->get('lightercolor');
+$showImages = $params->get('show_secondary_images');
+
 
 // Add CSS
 $document = JFactory::getDocument();

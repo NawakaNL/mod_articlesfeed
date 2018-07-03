@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 		</div>
 		<div class="custom-col-7-sm custom-col-5 articlesfeed-title" style="background-color: <?PHP echo strlen($title) > 1 ? $lightercolor : $color; ?>">
 			<div class="head-title">
-				<?php print($list[0]->title) ?> &nbsp;
+				<?php print($list[0]->title) ?>
 				<div class="icons">
 					<?php foreach($list[0]->tags->itemTags as $tag) {
 						echo '<i class="icon icon-'.$tag->path.'"></i>';
@@ -41,9 +41,16 @@ defined('_JEXEC') or die;
 	<div class="articleslist custom-row">
 		<ul class="list">
 		<?php foreach (array_slice($list, 1) as $item) : ?>
-			<li itemscope itemtype="https://schema.org/Article" style="color: <?PHP echo $color; ?>">
+			<li itemscope class="secondary-links" itemtype="https://schema.org/Article" style="color: <?PHP echo $color; ?>">
+				<?php
+				// If show extra images
+				if(!empty($showImages) && $showImages == "1") {
+					echo '<div class="secondary-image" style="background-image:url(\''.json_decode($item->images)->image_intro.'\');"></div>';
+				}
+				?>
 				<a class="article-link" href="<?php echo $item->link; ?>" itemprop="url">
 					<span itemprop="name">
+
 						<?php echo $item->title; ?><?php foreach($item->tags->itemTags as $tag) {
 							echo '<i class="icon icon-'.$tag->path.'"></i>';
 						}?>

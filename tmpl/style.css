@@ -13,6 +13,17 @@
   margin: 0px;
 }
 
+.articlesfeed .secondary-image {
+  display: inline-block;
+  position: relative;
+  width:  80px;
+  height: 50px;
+  top: 20px;
+  background-position: 50% 50%;
+  background-repeat:   no-repeat;
+  background-size:     cover;
+}
+
 .articlesfeed .articlesfeed-title {
   height: 220px;
   overflow: hidden;
