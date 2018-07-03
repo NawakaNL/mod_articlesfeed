@@ -24,7 +24,7 @@ defined('_JEXEC') or die;
 		</div>
 		<div class="custom-col-7-sm custom-col-5 articlesfeed-title" style="background-color: <?PHP echo strlen($title) > 1 ? $lightercolor : $color; ?>">
 			<div class="head-title">
-				<?php print($list[0]->title) ?>
+				<?php print($list[0]->title) ?> &nbsp;
 				<div class="icons">
 					<?php foreach($list[0]->tags->itemTags as $tag) {
 						echo '<i class="icon icon-'.$tag->path.'"></i>';
