@@ -54,6 +54,10 @@
   text-decoration: underline;
 }
 
+.articlesfeed .icon {
+  margin-left: 5px;
+}
+
 .articlesfeed .icons .icon {
   color: #74a1cd;
   margin-left: 5px;
