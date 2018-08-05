@@ -20,7 +20,7 @@ defined('_JEXEC') or die;
 			</a>
 		<?PHP } ?>
 		<a href="<?PHP echo $list[0]->link; ?>" class="<?PHP echo strlen($title) > 1 ? "light" : "dark"; ?>">
-		<div class="custom-col-5-sm custom-col-7 articlesfeed-image" style="background-image: url('<?PHP print(json_decode($list[0]->images)->image_intro); ?>');">
+		<div class="custom-col-5-sm custom-col-7 articlesfeed-image" style="background-image: url('<?PHP print(!empty(json_decode($list[0]->images)->image_intro) ? json_decode($list[0]->images)->image_intro : JUri::base().'modules/mod_articlesfeed/tmpl/placeholder.png'); ?>');">
 		</div>
 		<div class="custom-col-7-sm custom-col-5 articlesfeed-title" style="background-color: <?PHP echo strlen($title) > 1 ? $lightercolor : $color; ?>">
 			<div class="head-title">
@@ -49,13 +49,14 @@ defined('_JEXEC') or die;
 				}
 				?>
 				<a class="article-link" href="<?php echo $item->link; ?>" itemprop="url">
-					<span itemprop="name">
+					<div itemprop="name">
 
 						<?php echo $item->title; ?><?php foreach($item->tags->itemTags as $tag) {
 							echo '<i class="icon icon-'.$tag->path.'"></i>';
 						}?>
-					</span>
+					</div>
 				</a>
+
 			</li>
 		<?php endforeach; ?>
 		</ul>
